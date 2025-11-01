@@ -20,7 +20,7 @@ git clone https://github.com/frnAlt/local_manifests.git --depth 1 -b a15/-infini
 # /opt/crave/resynctest.sh
 
 # Set up build environment
-export BUILD_USERNAME=tavukkdoner 
+export BUILD_USERNAME=Farhan 
 export BUILD_HOSTNAME=crave
 source build/envsetup.sh
 export WITH_GMS=false
