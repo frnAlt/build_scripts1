@@ -12,6 +12,7 @@ rm -rf .repo/local_manifests/
 repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/tavukkdoner/manifest -b 15 -g default,-mips,-darwin,-notdefault
 
 # Clone local_manifests repository
+rm -rf device/xiaomi/Mi439
 git clone https://github.com/frnAlt/local_manifests.git --depth 1 -b a15/-infinity .repo/local_manifests
 
 
@@ -22,7 +23,10 @@ git clone https://github.com/frnAlt/local_manifests.git --depth 1 -b a15/-infini
 # Set up build environment
 export BUILD_USERNAME=Farhan 
 export BUILD_HOSTNAME=crave
+
+# build envsetup 
 source build/envsetup.sh
+
 export WITH_GMS=false
 export TARGET_BOOT_ANIMATION_RES=720
 export WITH_GAPPS=false
